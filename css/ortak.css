@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+* {
+    font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+  font-size: 0.9rem;
+  background: #f1f1f1;
+  width: 100%;
+  height:100%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+	
+}
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  /* background-color: #b61924; */
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index:-1;
+  position:absolute;
+}
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#dashboardid {
+    width: 90vw;
+    height: calc(73vh - 40px);
+	min-height: 300px;
+    /* position: fixed; */
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 10%), 0 2px 24px rgb(0 0 0 / 20%);
+    border: 0;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    padding: 5px;
+	margin:20px;
+
+}
+#dashboardid2 {
+    /* width: 70vw; */
+    height: calc(73vh - 40px);
+	min-height: 300px;
+    /* position: fixed; */
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0 1px 6px rgb(0 0 0 / 10%), 0 2px 24px rgb(0 0 0 / 20%); */
+    /* border: 0; */
+    border-radius: 10px;
+    /* flex-wrap: wrap; */
+    padding: 5px;
+	margin:20px;
+
+}
+
+.shadowbtn{
+    height:20%;
+    width:40%;
+    color: #333;
+	background-color: lightgray;
+	border-radius:10px;
+	margin: 5px;
+	text-align: center;
+	text-decoration: none;
+	outline: 0 !important;
+	display: flex;
+    align-content: center;
+    justify-content: center;
+	flex-direction: column;
+	font-weight:700;
+	padding: 5px;
+	position: relative;
+}
+
+.shadowbtn:hover {
+    box-shadow: 0px 0px 4px 3px grey, 0 6px 5px lightgrey;
+	color: #e64305;
+}
+
+.cardlogo {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+}
+.cardlogo2 {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+	border: 2px solid white;
+    border-radius: 10px;
+    padding: 1px 1px;
+}
+
+.cardicon {
+    font-weight: 900;
+    font-size: 20px;
+	margin-bottom: 5px;
+}
+
+#copyright0 {
+	text-align: center;
+	width: 100%;
+	height:7vh;
+	/* font-size: 13px; */
+	color: #ffffff;
+	/* position:fixed; */
+	/* bottom:0; */
+	background:#134981;
+	padding:5px;
+	z-index: 9999;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#copyright1 {
+	margin-top: 0;
+    margin-bottom: 0;
+}
+#brand0 {
+	text-align: center;
+	width: 100%;
+	height:20vh;
+	color: #ffffff;
+	position:relative;
+	/* top:0; */
+	background:#134981;
+	padding:7px;
+    /* align-items: center; */
+    /* justify-content: center; */
+	z-index: 9998;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#brand1 {
+	margin-top: 0;
+    margin-bottom: 0;
+	font-weight: 700;
+}
+#brandlogo {
+	padding: 5px;
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#checkaddressarea {
+	width: 95%;
+    height: 70%;
+    background: #dcdcdc;
+    position: relative;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+	box-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);border:0;
+	border-radius:10px;
+}
+#errorareabalance {
+    width: 90%;
+    height: 20px;
+	text-align: right;
+	color: #fff;
+	font-weight: bold;
+	
+}
+
+#titleareabalance  {
+	position:absolute;
+	top:0;
+	height: 40%;
+	width: 100%;
+	background-color: #12263c;
+	color: white;
+	text-align: center;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	
+}
+#ortaalan {
+	width:100%;
+    position: absolute;
+	bottom: 20%;
+    height: 40%;
+	background-color: #12263c;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#inputbalance {
+	width:90%;
+	text-align: center;
+	/* margin-bottom: 5px; */
+}
+#checkbalancebutton {
+	width:100%;
+    position: absolute;
+    bottom: 0;
+	height: 20%;
+	background-color: #12263c;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+#balancebutton {
+	width:50%;
+}
+
+@media screen and (min-width:1000px) {
+	
+	#brandlogo {
+		width:300px;
+	}
+	#brand1 {
+		font-size: 24px;
+	}
+	.shadowbtn{
+		font-size:15px;
+	}
+	.cardlogo > img {
+		width:30px;
+	}
+	.cardlogo2 > img {
+		width:70px;
+	}
+	#copyright1 {
+		font-size: 14px;
+	}
+	#titleareabalance > h3  {
+		font-size: 22px;
+	}
+	#titleareabalance > p  {
+		font-size: 16px;
+	}
+	#inputbalance {
+		font-size: 16px;
+	}
+	#balancebutton {
+		font-size: 16px;
+	}
+	#dashboardid2 {
+		width: 70vw;
+	}
+}
+
+@media (min-width:800px) and (max-width:1000px) {
+	
+	#brandlogo {
+		width:270px;
+	}
+	#brand1 {
+		font-size: 22px;
+	}
+	.shadowbtn{
+		font-size:13px;
+	}
+	.cardlogo > img {
+		width:30px;
+	}
+	.cardlogo2 > img {
+		width:60px;
+	}
+	#copyright1 {
+		font-size: 13px;
+	}
+	#titleareabalance > h3  {
+		font-size: 20px;
+	}
+	#titleareabalance > p  {
+		font-size: 15px;
+	}
+	#inputbalance {
+		font-size: 16px;
+	}
+	#balancebutton {
+		font-size: 16px;
+	}
+	#dashboardid2 {
+		width: 70vw;
+	}
+}
+
+@media (min-width:600px) and (max-width:800px) {
+	
+	#brandlogo {
+		width:250px;
+	}
+	#brand1 {
+		font-size: 20px;
+	}
+	.shadowbtn{
+		font-size:10px;
+	}
+	.cardlogo > img {
+		width:25px;
+	}
+	.cardlogo2 > img {
+		width:50px;
+	}
+	#copyright1 {
+		font-size: 12px;
+	}
+	#titleareabalance > h3  {
+		font-size: 18px;
+	}
+	#titleareabalance > p  {
+		font-size: 14px;
+	}
+	#inputbalance {
+		font-size: 15px;
+	}
+	#balancebutton {
+		font-size: 14px;
+	}
+	#dashboardid2 {
+		width: 80vw;
+	}
+	
+}
+
+@media (min-width:400px) and (max-width:600px) {
+	
+	#brandlogo {
+		width:230px;
+	}
+	#brand1 {
+		font-size: 18px;
+	}
+	.shadowbtn{
+		font-size:9px;
+	}
+	.cardlogo > img {
+		width:20px;
+	}
+	.cardlogo2 > img {
+		width:50px;
+	}
+	.cardicon {
+		font-size: 18px;
+	}
+	#copyright1 {
+		font-size: 11px;
+	}
+	#titleareabalance > h3  {
+		font-size: 16px;
+	}
+	#titleareabalance > p  {
+		font-size: 12px;
+	}
+	#inputbalance {
+		font-size: 13px;
+	}
+	#errorareabalance {
+		font-size: 10px;
+	}
+	#balancebutton {
+		font-size: 12px;
+	}
+	#dashboardid2 {
+		width: 85vw;
+	}
+
+}
+
+@media screen and (max-width:400px) {
+	
+	#brandlogo {
+		width:200px;
+	}
+	#brand1 {
+		font-size: 16px;
+	}
+	.shadowbtn{
+		font-size:8px;
+	}
+	.cardlogo > img {
+		width:15px;
+	}
+	.cardlogo2 > img {
+		width:40px;
+	}
+	.cardicon {
+		font-size: 16px;
+	}
+	#copyright1 {
+		font-size: 9px;
+	}
+	#titleareabalance > h3  {
+		font-size: 14px;
+	}
+	#titleareabalance > p  {
+		font-size: 10px;
+	}
+	#inputbalance {
+		font-size: 16px;
+	}
+	#errorareabalance {
+		font-size: 9px;
+	}
+	#balancebutton {
+		font-size: 9px;
+	}
+	#dashboardid2 {
+		width: 90vw;
+	}
+
+
+}
+
+@media (min-height:450px) and (max-height: 550px) {
+    #brandlogo {
+		width:200px;
+	}
+	#brand1 {
+		font-size: 16px;
+	}
+	#copyright1 {
+		font-size: 12px;
+	}
+}
+
+@media (min-height:325px) and (max-height:450px) {
+	 #brandlogo {
+		width:150px;
+	}
+	#brand1 {
+		font-size: 13px;
+	}
+	#copyright1 {
+		font-size: 11px;
+	}
+}
+@media screen and (max-height:325px) {
+	 #brandlogo {
+		width:100px;
+	}
+	#brand1 {
+		font-size: 9px;
+	}
+	#copyright1 {
+		font-size: 9px;
+	}
+}

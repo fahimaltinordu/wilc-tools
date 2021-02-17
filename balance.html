@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Point of sale, allows users to accept Wrapped ILCOIN" />
+	<meta name="keywords" content="wilc, payment, cryptocurrency, wrapped, ilcoin, bitcoin, ethereum, eth, btc, coin, crypto, sale, point, gateway" />
+	<meta name="author" content="PlusBit" />
+	
+    
+	<title>WILC ĐApp - Check Balance</title>
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/IcoWilc.ico">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- MAIN STYLES-->
+    <link rel="stylesheet" href="css/ortak.css">
+
+	 <!-- FONTAWESOME STYLES-->
+	<script src="https://kit.fontawesome.com/a90a45c743.js" crossorigin="anonymous"></script> 
+	<link rel="stylesheet" href="css/font-awesome-animation.min.css">
+  </head>
+  
+  <body>
+	
+	   <div id="brand0" >
+			<div id="particles-js"></div>			
+			<img id="brandlogo" draggable="false" src="img/wilc.svg" alt="WILC" >
+			<p class="noselect" id="brand1">Wrapped ILCOIN ĐApp</p>
+	   </div>
+	
+	   <div id="dashboardid2">
+		 <div id="checkaddressarea" > 
+				
+				
+				<div id="titleareabalance">
+					<h3>Check WILC Balance</h3>
+					<p>Enter your WILC/ETH address and click button</p>
+					
+					<div class="cardlogo2"><img draggable="false" src="img/logo-w.png" alt="WILC" ></div>
+				</div>
+				
+				<div id="ortaalan">
+					<input id="inputbalance" type="text" class="form-control" placeholder="0x000000000000000000000000000000000000000" onfocus="this.placeholder = ''" onblur="this.placeholder = '0x000000000000000000000000000000000000000'" aria-label="Username" aria-describedby="basic-addon1">
+					
+					<div id="errorareabalance">
+						<p id="resultbalance" ></p>
+					</div>
+				</div>
+				
+				<div id="checkbalancebutton">
+					<button id="balancebutton" type="button" class="btn btn-secondary" onclick="CheckBalance()">Check WILC Balance</button>
+				</div>
+		 </div>
+			
+			
+			
+	   </div>
+
+	   <div id="copyright0">
+		<p class="noselect" id="copyright1">Copyright © 2021 All Rights Reserved | Powered by PlusBit</p>
+	   </div>
+	   
+
+	<script src="js/ethers.min.js"></script>
+	<script src="js/balance.js"></script>
+	
+    <script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+	
+
+  </body>
+</html>
